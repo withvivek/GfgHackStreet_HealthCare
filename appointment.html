@@ -1,0 +1,63 @@
+<!-- Appointment Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <link rel="stylesheet" href="appointment.css"> <!-- link to your stylesheet -->
+   
+</head>
+<body>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Book Your Appointment</h1>
+        <p>Get expert care and schedule your appointment today!</p>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section class="appointment-form">
+        
+        <form action="pay.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+         
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="">Select Service</option>
+                <option value="service1">Gen Medicine</option>
+                <option value="service2">Gastro</option>
+                <option value="service3">Gynaecology</option>
+                <option value="service4">ENT</option>
+                <option value="service5">Pulmonary</option>
+                <option value="service6">Cardiology</option>
+                <option value="Service7">Urology</option>
+                <option value="service8">Dermatology</option>
+                <option value="service9">Neuro</option>
+            </select><br><br>
+            <input type="submit" value="Book Appointment">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 </p>
+    </footer>
+    <script>
+        const appointmentForm = document.getElementById('appointment-form');
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = 'pay.html'; // redirect to payment gateway page
+        });
+    </script>
+
+</body>
+</html>
